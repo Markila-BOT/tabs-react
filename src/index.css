@@ -11,3 +11,126 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div[disabled] {
+  pointer-events: none;
+  background-color: #bbb;
+  opacity: 0.7;
+}
+
+.componentsContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.tabContainer {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  height: auto;
+  float: left;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .mainContainer {
+    float: left;
+    width: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(20, 54, 66, 0.6) 100%,
+        rgba(20, 54, 66, 0.6) 100%,
+        rgba(20, 54, 66, 0.6) 0%,
+        rgba(20, 54, 66, 0.6) 0%
+      ),
+      url(/images/Carly_BG.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .tabContainer {
+    width: 568px;
+    margin: 60px auto;
+    padding: 60px 50px;
+    float: none;
+    height: 900px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .tabContainer {
+    margin: 80px auto;
+    height: auto;
+  }
+}
+
+.textInputField {
+  width: 80%;
+  height: 15px;
+  padding: 6px;
+}
+
+.addButton {
+  background-color: #29b6f6;
+  padding: 2px;
+  color: white;
+  position: relative;
+  left: -16px;
+  margin-top: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.addButton:hover {
+  background-color: #0f74a3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+ul li {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  position: relative;
+}
+
+ul li:hover {
+  background-color: #eee;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {
+  background: #bbb;
+}
+
+.checked {
+  background: #29b6f6;
+}
+
+.centerMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  flex: 0 0 120px;
+}
